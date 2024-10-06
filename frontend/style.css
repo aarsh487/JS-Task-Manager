@@ -1,0 +1,125 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f06c64, #f2d7d9);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.tasks {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.tasks:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 600px) {
+  .tasks {
+      width: 70%;
+  }
+}
+
+
+.taskIn input {
+  width: 85%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.taskIn input:focus {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn button {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #5cb85c, #4cae4c);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn button:hover {
+  background: linear-gradient(90deg, #4cae4c, #5cb85c);
+  transform: scale(1.05);
+}
+
+.taskOut div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #5cb85c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.taskOut div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.taskOut div.completed {
+  background-color: #e6e6e6;
+  border-left-color: #d9534f;
+}
+
+.taskOut h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.taskOut button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.taskOut button:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tasks {
+  text-align: center;
+}
+
+.taskOut div:focus-within {
+  outline: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
